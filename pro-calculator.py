@@ -2,7 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import quad
 from scipy.linalg import inv, eig
-from scipy.stats import mean, median, variance, stdev
+from numpy.polynomial import Polynomial
+from sympy import symbols, diff, sympify
 
 def add(x, y):
     return x + y
@@ -29,7 +30,7 @@ def square_root(x):
 def factorial(x):
     if x < 0 or not x.is_integer():
         return "Error! Factorial of negative or non-integer number."
-    return math.factorial(int(x))
+    return np.math.factorial(int(x))
 
 def trig_sin(x):
     return np.sin(np.radians(x))
@@ -105,13 +106,13 @@ def polynomial_operations():
     degree = int(input("Enter the degree of the polynomial: "))
     coefficients = [float(input(f"Enter coefficient for x^{i}: ")) for i in range(degree + 1)]
     
-    poly = np.poly1d(coefficients)
+    poly = Polynomial(coefficients)
     
     if choice == '1':
         x = float(input("Enter the value of x: "))
         result = poly(x)
     elif choice == '2':
-        result = np.roots(coefficients)
+        result = poly.roots()
     else:
         return "Invalid choice"
     
@@ -134,8 +135,6 @@ def function_differentiation():
     def func(x):
         return eval(func_str)
     
-    from sympy import symbols, diff, sympify
-
     x = symbols('x')
     func_str = input("Enter the function to differentiate (e.g., 'x**2 + 2*x + 1'): ")
     func_expr = sympify(func_str)
@@ -148,10 +147,10 @@ def statistical_operations():
     data = list(map(float, input("Enter data values separated by spaces: ").split()))
     
     return {
-        "Mean": mean(data),
-        "Median": median(data),
-        "Variance": variance(data),
-        "Standard Deviation": stdev(data)
+        "Mean": np.mean(data),
+        "Median": np.median(data),
+        "Variance": np.var(data),
+        "Standard Deviation": np.std(data)
     }
 
 def plot_function():
@@ -242,4 +241,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-      
+    
