@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="90" fill="#4CAF50" stroke="#fff" stroke-width="10" />
+    
+    <!-- Calculator Icon -->
+    <rect x="50" y="50" width="100" height="130" fill="#fff" stroke="#333" stroke-width="3" rx="10" />
+    
+    <!-- Screen of the Calculator -->
+    <rect x="50" y="55" width="100" height="40" fill="#E0E0E0" stroke="#333" stroke-width="2" rx="5" />
+    
+    <!-- Buttons of the Calculator -->
+    <rect x="60" y="100" width="20" height="20" fill="#4CAF50" stroke="#333" stroke-width="2" />
+    <rect x="90" y="100" width="20" height="20" fill="#4CAF50" stroke="#333" stroke-width="2" />
+    <rect x="120" y="100" width="20" height="20" fill="#4CAF50" stroke="#333" stroke-width="2" />
+    
+    <rect x="60" y="130" width="20" height="20" fill="#4CAF50" stroke="#333" stroke-width="2" />
+    <rect x="90" y="130" width="20" height="20" fill="#4CAF50" stroke="#333" stroke-width="2" />
+    <rect x="120" y="130" width="20" height="20" fill="#4CAF50" stroke="#333" stroke-width="2" />
+    
+    <!-- Text -->
+    <text x="100" y="190" font-family="Arial" font-size="18" fill="#fff" text-anchor="middle">CalcPro</text>
+</svg>
