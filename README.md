@@ -1,5 +1,8 @@
 # Advanced Python Calculator
 
+![Logo](logo.svg)
+
+---
 ## Overview
 
 This Python calculator script is a powerful tool that supports a wide range of mathematical operations. It includes basic arithmetic calculations, advanced mathematical functions, matrix operations, polynomial calculations, integration, differentiation, statistical analysis, and function plotting. This README provides a detailed guide on the usage, features, and code structure of the calculator.
