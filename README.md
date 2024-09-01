@@ -1,5 +1,5 @@
 # Advanced Python Calculator
-
+[In C script](https://github.com/mdriyadkhan585/Advanced-calculator-C)
 ![Logo](logo.svg)
 
 ---
